@@ -13,7 +13,7 @@ A repository containing full of code snippets to manipulate the DOM of popular w
 
 **Note:** I have created this project for my personal use and save my hacky, R&D related code snippets. So be careful and don't misuse it anywhere.
 
-Let's have look at below examples. It will also help users/developers/newbies to learn JavaScript/jQuery. Examples are documented, easy and staightforward.
+Let's have look at below examples. It will also help users/developers/newbies to learn JavaScript/jQuery. Examples are documented, easy and straightforward.
 
 ## Linkedin 
 
@@ -63,14 +63,14 @@ contributors.setAttribute("target", "_blank")
 contributors.click()
 ```
 
-### Raising pull request - open in new tab
+### Raising/Creating pull request - open in new tab
 > Attempted on 1 Jan 2020, Wed
 
 ```javascript
 // Get anchor link element
 var newPullReqBtn = document.getElementsByClassName('new-pull-request-btn')[0]
 
-// First check if target is set or not (which is not actually set so `null`)
+// First check if target is set or not (which is actually `null`)
 newPullReqBtn.getAttribute("target")
 
 // Set attribute to open in new tab
@@ -104,7 +104,7 @@ var commitsElems = document.getElementsByClassName("message")
 */
 
 
-// Printing innerText of all
+// Printing innerText of all commits
 for(let commitElem of commitsElems) {
     console.log(commitElem.innerText)
 }
