@@ -18,7 +18,7 @@ A repository containing full of code snippets to manipulate the DOM of popular w
 
 Have a look at the pictures attaached related to this section at [Linkedin Hacky Images](./docs/2020/jan/nidknil.md).
 
-> **Single connection request**
+### Single connection request
 > Attempted on 1 Jan 2020, Wed
 
 ```javascript
@@ -26,7 +26,7 @@ var elem = $("button[data-control-name='people_connect']").click()
 elem.click()
 ````
 
-> **Multiple connection requests**
+### Multiple connection requests
 > Attempted on 1 Jan 2020, Wed
 
 ```javascript
@@ -47,7 +47,7 @@ for(let button of buttons) {
 
 ## GitHub
 
-> **Open the contributors link in new tab**
+### Open the contributors link in new tab
 > Attempted on 1 Jan 2020, Wed
 
 ```javascript
@@ -62,7 +62,7 @@ contributors.setAttribute("target", "_blank")
 contributors.click()
 ```
 
-> **Raising pull request - open in new tab**
+### Raising pull request - open in new tab
 > Attempted on 1 Jan 2020, Wed
 
 ```javascript
@@ -77,5 +77,18 @@ newPullReqBtn.setAttribute("target", "_blank")
 
 // Click on link
 newPullReqBtn.click()
+```
+
+### Printing added topics to the repository
+> Attempted on 1 Jan 2020, Wed
+
+```javascript
+// Get list of elements by class name
+let elems = document.getElementsByClassName("topic-tag-link")
+
+// Printing the text (topic)
+for(let elem of elems) {
+    console.log(elem.innerText)
+}
 ```
 
