@@ -2,16 +2,19 @@
 
 A repository containing full of code snippets to manipulate the DOM of popular websites (secret) and perform time taking actions quickly in seconds. Basically I have written it for my personal usage.
 
-## Linkedin - Attempted on 01/01/2020
+## Linkedin
 
-> **Single**
+
+> **Single connection request**
+>
+> Attempted on 1 Jan 2020, Wed
 
 ```javascript
 elem = $("button[data-control-name='people_connect']").click()
 elem.click()
 ````
 
-> **Many**
+> **Multiple connection requests**
 
 ```javascript
 // Get all buttons
@@ -29,7 +32,11 @@ for(let button of buttons) {
 ```
 
 
-## GitHub - opening the contributors link in new tab
+## GitHub
+
+> **Opening the contributors link in new tab**
+>
+> Attempted on 1 Jan 2020, Wed
 
 ```javascript
 // Open in new tab (By default, GitHub doesn't open link new tab).
