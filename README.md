@@ -7,14 +7,15 @@ A repository containing full of code snippets to manipulate the DOM of popular w
 + I love JavaScript/jQuery.
 + I am very curious to know about internal working (API calls, DOM change on actions/events etc.) in websites of Amazon, Linkedin, Facebook, Google etc.
 + When I was sending requests to people in Linkedin, I found it as repeating & time consuming work.
-+ Later, I thought to solve this using JavaScript/jQuery and I succeeded long back but I didn't save my code anywhere.
-+ In new year, almost after 2-3 months, again I inspected webpages, and did R&D again. This was again a rework of what I had already done before.
++ Later, I thought to solve this using JavaScript/jQuery and I succeeded (long back) but I didn't save my code anywhere.
++ In this new year(2020), almost after 2-3 months since last attempt, again I inspected webpage and did R&D. It was again a rework of what I had already done before.
 + Finally, I decided to get rid of this problem and share my work with the world.
 
-**Note:** I have created this project for my personal use and save my hacky & R&D related code snippets. So be careful and don't misuse it anywhere.
+**Note:** I have created this project for my personal use and save my hacky, R&D related code snippets. So be careful and don't misuse it anywhere.
 
+Let's have look at below examples. It will also help users/developers/newbies to learn JavaScript/jQuery. Examples are documented, easy and staightforward.
 
-## Linkedin
+## Linkedin 
 
 Have a look at the pictures attaached related to this section at [Linkedin Hacky Images](./docs/2020/jan/nidknil.md).
 
@@ -90,5 +91,32 @@ let elems = document.getElementsByClassName("topic-tag-link")
 for(let elem of elems) {
     console.log(elem.innerText)
 }
+```
+
+### Printing all commits
+> Attempted on 1 Jan 2020, Wed
+
+```javascript
+// Get all elements (links `a` with class `message`) 
+var commitsElems = document.getElementsByClassName("message")
+/*
+    HTMLCollection(8) [a.message.js-navigation-open, a.message.js-navigation-open, a.message.js-navigation-open, a.message.js-navigation-open, a.message.js-navigation-open, a.message.js-navigation-open, a.message.js-navigation-open, a.message.js-navigation-open]
+*/
+
+
+// Printing innerText of all
+for(let commitElem of commitsElems) {
+    console.log(commitElem.innerText)
+}
+/*
+    added script to print topics added to repo
+    updated script to create pull request in next tab
+    added images related to Linkedin Hacky Images
+    updated README.md with update on details
+    added script to click on GitHub's contributors to open in new tab
+    added js scripts for single & multple connection requests sending hac…
+    Set theme jekyll-theme-cayman
+    Initial commit
+*/
 ```
 
