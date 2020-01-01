@@ -1,27 +1,27 @@
 # Linked Hacky Images
 
-![../../../images/2020/jan/nidknil_01.png]
+![Hacky Image 1](../../../images/2020/jan/nidknil_01.png)
 
 <hr>
 
-![../../../images/2020/jan/nidknil_02.png]
+![Hacky Image 2](../../../images/2020/jan/nidknil_02.png)
 
 <hr>
 
-![../../../images/2020/jan/nidknil_03.png]
+![Hacky Image 3](../../../images/2020/jan/nidknil_03.png)
 
 <hr>
 
-![../../../images/2020/jan/nidknil_04.png]
+![Hacky Image 4](../../../images/2020/jan/nidknil_04.png)
 
 <hr>
 
-![../../../images/2020/jan/nidknil_05.png]
+![Hacky Image 5](../../../images/2020/jan/nidknil_05.png)
 
 <hr>
 
-![../../../images/2020/jan/nidknil_06.png]
+![Hacky Image 6](../../../images/2020/jan/nidknil_06.png)
 
 <hr>
 
-![../../../images/2020/jan/nidknil_07.png]
+![Hacky Image 7](../../../images/2020/jan/nidknil_07.png)

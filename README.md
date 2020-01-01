@@ -47,7 +47,7 @@ for(let button of buttons) {
 
 ## GitHub
 
-> **Opening the contributors link in new tab**
+> **Open the contributors link in new tab**
 > Attempted on 1 Jan 2020, Wed
 
 ```javascript
@@ -60,5 +60,22 @@ contributors.setAttribute("target", "_blank")
 
 // Click on the link
 contributors.click()
+```
+
+> **Raising pull request - open in new tab**
+> Attempted on 1 Jan 2020, Wed
+
+```javascript
+// Get anchor link element
+var newPullReqBtn = document.getElementsByClassName('new-pull-request-btn')[0]
+
+// First check if target is set or not (which is not actually set so `null`)
+newPullReqBtn.getAttribute("target")
+
+// Set attribute to open in new tab
+newPullReqBtn.setAttribute("target", "_blank")
+
+// Click on link
+newPullReqBtn.click()
 ```
 
