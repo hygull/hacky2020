@@ -22,7 +22,7 @@ Let's have look at below examples. It will also help users/developers/newbies to
 Have a look at the attached images related to this section at [Linkedin Hacky Images](./docs/2020/jan/nidknil.md).
 
 ### Single connection request
-> Attempted on 1 Jan 2020, Wed
+> Attempted on Wed, Jan 1, 2020
 
 ```javascript
 var elem = $("button[data-control-name='people_connect']").click()
@@ -30,7 +30,7 @@ elem.click()
 ````
 
 ### Multiple connection requests
-> Attempted on 1 Jan 2020, Wed
+> Attempted on Wed, Jan 1, 2020
 
 ```javascript
 // Get all buttons
@@ -51,7 +51,7 @@ for(let button of buttons) {
 ## GitHub
 
 ### Open the contributors link in new tab
-> Attempted on 1 Jan 2020, Wed
+> Attempted on Wed, Jan 1, 2020
 
 ```javascript
 // Open in new tab (By default, GitHub doesn't open link new tab).
@@ -66,7 +66,7 @@ contributors.click()
 ```
 
 ### Raising/Creating pull request - open in new tab
-> Attempted on 1 Jan 2020, Wed
+> Attempted on Wed, Jan 1, 2020
 
 ```javascript
 // Get anchor link element
@@ -83,7 +83,7 @@ newPullReqBtn.click()
 ```
 
 ### Printing added topics to the repository
-> Attempted on 1 Jan 2020, Wed
+> Attempted on Wed, Jan 1, 2020
 
 ```javascript
 // Get list of elements by class name
@@ -96,7 +96,7 @@ for(let elem of elems) {
 ```
 
 ### Printing all commits
-> Attempted on 1 Jan 2020, Wed
+> Attempted on Wed, Jan 1, 2020
 
 ```javascript
 // Get all elements (links `a` with class `message`) 
@@ -172,3 +172,6 @@ for(let elem of elems) {
     Work
 */
 ``` 
+
+![Hacky Image 10](./images/2020/jan/nidknil_10.png)
+
