@@ -15,9 +15,11 @@ A repository containing full of code snippets to manipulate the DOM of popular w
 
 Let's have look at below examples. It will also help users/developers/newbies to learn JavaScript/jQuery. Examples are documented, easy and straightforward.
 
+> **`$`** &raquo; **`ƒ $(selector, [startNode]) { [Command Line API] }`**
+
 ## Linkedin 
 
-Have a look at the pictures attaached related to this section at [Linkedin Hacky Images](./docs/2020/jan/nidknil.md).
+Have a look at the attached images related to this section at [Linkedin Hacky Images](./docs/2020/jan/nidknil.md).
 
 ### Single connection request
 > Attempted on 1 Jan 2020, Wed
@@ -120,3 +122,53 @@ for(let commitElem of commitsElems) {
 */
 ```
 
+### Printing nav items text (innerText)
+
+> Attempted on Thu, Jan 2, 2020
+
+```javascript
+/*
+    Aim
+    ===
+    To print text of Linkedin's nav bar i.e. Home, My Network etc. 
+
+    Coded on
+    ========
+    Thu, Jan 2, 2020
+    
+    By
+    ==
+    Rishikesh Agrawani
+
+    Got idea from
+    =============
+    $ -> ƒ $(selector, [startNode]) { [Command Line API] }
+*/
+
+// Get all nav items by class name 
+var elems = document.getElementsByClassName("nav-item")
+
+// First way using `textContent`
+for(let elem of elems) {
+    let navItem = $(".nav-item__title", elem)
+    if(navItem) //!null
+    console.log(navItem.textContent)
+}
+
+// Second way using `innerText`
+for(let elem of elems) {
+    let navItem = $(".nav-item__title", elem)
+    if(navItem) //!null
+    console.log(navItem.innerText)
+}
+
+/*
+    Home
+    My Network
+    Jobs
+    Messaging
+    Notifications
+    Me
+    Work
+*/
+``` 
