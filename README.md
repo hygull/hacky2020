@@ -51,6 +51,61 @@ for(let button of buttons) {
 ```
 
 
+### Printing nav items text (innerText)
+
+> Attempted on Thu, Jan 2, 2020
+
+```javascript
+/*
+    Aim
+    ===
+    To print text of Linkedin's nav bar i.e. Home, My Network etc. 
+
+    Coded on
+    ========
+    Thu, Jan 2, 2020
+    
+    By
+    ==
+    Rishikesh Agrawani
+
+    Got idea from
+    =============
+    $ -> ƒ $(selector, [startNode]) { [Command Line API] }
+*/
+
+// Get all nav items by class name 
+var elems = document.getElementsByClassName("nav-item")
+
+// First way using `textContent`
+for(let elem of elems) {
+    let navItem = $(".nav-item__title", elem)
+    if(navItem) //!null
+    console.log(navItem.textContent)
+}
+
+// Second way using `innerText`
+for(let elem of elems) {
+    let navItem = $(".nav-item__title", elem)
+    if(navItem) //!null
+    console.log(navItem.innerText)
+}
+
+/*
+    Home
+    My Network
+    Jobs
+    Messaging
+    Notifications
+    Me
+    Work
+*/
+``` 
+
+![Hacky Image 10](./images/2020/jan/nidknil_10.png)
+
+<hr>
+
 ## GitHub
 
 ### Open the contributors link in new tab
@@ -124,57 +179,4 @@ for(let commitElem of commitsElems) {
     Initial commit
 */
 ```
-
-### Printing nav items text (innerText)
-
-> Attempted on Thu, Jan 2, 2020
-
-```javascript
-/*
-    Aim
-    ===
-    To print text of Linkedin's nav bar i.e. Home, My Network etc. 
-
-    Coded on
-    ========
-    Thu, Jan 2, 2020
-    
-    By
-    ==
-    Rishikesh Agrawani
-
-    Got idea from
-    =============
-    $ -> ƒ $(selector, [startNode]) { [Command Line API] }
-*/
-
-// Get all nav items by class name 
-var elems = document.getElementsByClassName("nav-item")
-
-// First way using `textContent`
-for(let elem of elems) {
-    let navItem = $(".nav-item__title", elem)
-    if(navItem) //!null
-    console.log(navItem.textContent)
-}
-
-// Second way using `innerText`
-for(let elem of elems) {
-    let navItem = $(".nav-item__title", elem)
-    if(navItem) //!null
-    console.log(navItem.innerText)
-}
-
-/*
-    Home
-    My Network
-    Jobs
-    Messaging
-    Notifications
-    Me
-    Work
-*/
-``` 
-
-![Hacky Image 10](./images/2020/jan/nidknil_10.png)
 
