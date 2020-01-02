@@ -25,7 +25,10 @@ Have a look at the attached images related to this section at [Linkedin Hacky Im
 > Attempted on Wed, Jan 1, 2020
 
 ```javascript
-var elem = $("button[data-control-name='people_connect']").click()
+// Get element
+var elem = $("button[data-control-name='people_connect']")
+
+// Click on element
 elem.click()
 ````
 
