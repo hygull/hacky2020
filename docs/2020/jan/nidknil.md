@@ -25,3 +25,15 @@
 <hr>
 
 ![Hacky Image 7](../../../images/2020/jan/nidknil_07.png)
+
+<hr>
+
+![Hacky Image 8](../../../images/2020/jan/nidknil_08.png)
+
+<hr>
+
+![Hacky Image 9](../../../images/2020/jan/nidknil_09.png)
+
+<hr>
+
+![Hacky Image 10](../../../images/2020/jan/nidknil_10.png)

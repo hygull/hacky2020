@@ -42,3 +42,6 @@ for(let elem of elems) {
     Me
     Work
 */
+
+![Hacky Image 10](./images/2020/jan/nidknil_10.png)
+
