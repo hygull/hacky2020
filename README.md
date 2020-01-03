@@ -21,7 +21,15 @@ Let's have look at below examples. It will also help users/developers/newbies to
 >
 > **`$`** &raquo **`ƒ $(selector, [startNode]) { [Command Line API] }`** &raquo; **`GitHub`**
 
-## Linkedin 
+### Gettings started (Directly jump to)
+
+1. [LinkedIn Hacky Works](#linkedin)
+1. [GitHub Hacky Works](#github)
+1. [StackOverlow Hacky Works](#stackoverflow)
+
+<hr>
+
+<h2 id='linkedin'> Linkedin </h2>
 
 Have a look at the attached images related to this section at [Linkedin Hacky Images](./docs/2020/jan/nidknil.md).
 
@@ -110,7 +118,7 @@ for(let elem of elems) {
 
 <hr>
 
-## GitHub
+<h2 id="github">GitHub</h2>
 
 ### Open the contributors link in new tab
 > Attempted on Wed, Jan 1, 2020
@@ -213,8 +221,8 @@ console.log(getNavItemsLinks())
     ]
 */
 ``` 
-
-## StackOverFlow
+<hr>
+<h2 id="stackoverflow">StackOverFlow</h2>
 
 ### Getting question texts from home's questions list page
 
