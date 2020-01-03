@@ -232,3 +232,27 @@ console.log(JSON.stringify(getQuestionTexts(), null, 4)) // Pretty print
 // console.log(getQuestionTexts())
 
 ```
+
+### Hot network questions - getting question texts
+
+```javascript
+function gethotNextworkQuestionTexts() {
+    let hotNextworkQuestionTexts = [] // new Array()
+
+    $(".question-hyperlink").each(function(index, questionHyperlink){
+        if($(questionHyperlink).hasClass("mb0"))
+            hotNextworkQuestionTexts.push($(questionHyperlink).text())
+    })
+
+    // Removal of \n & spaces around
+    //
+    // [
+    // "\n                    Significant pay cut in new job not justified in retrospect - next steps?\n                ",
+    // ...
+    // ...
+    // ]
+    return hotNextworkQuestionTexts.map((questionText) => questionText.trim())
+}
+
+console.log(JSON.stringify(gethotNextworkQuestionTexts(), null, 4))
+```
