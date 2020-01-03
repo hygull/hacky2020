@@ -180,3 +180,31 @@ for(let commitElem of commitsElems) {
 */
 ```
 
+### Getting list of nav items links
+> Attempted on Fri, Jan 3, 2020
+
+```javascript
+function getNavItemsLinks() {
+    let navLinks = new Array()
+
+    for(let li of $("nav ul").children) {
+        let a = $('a', li)
+
+        if(a)
+            navLinks.push(a.href)       
+    }
+
+    return navLinks
+}
+
+console.log(getNavItemsLinks())
+/*
+    [
+        "https://www.linkedin.com/feed/", 
+        "https://www.linkedin.com/mynetwork/", 
+        "https://www.linkedin.com/jobs/", 
+        "https://www.linkedin.com/messaging/", 
+        "https://www.linkedin.com/notifications/", 
+        "https://www.linkedin.com/premium/products/?destRed…%3Dtrue&upsellOrderOrigin=premium_nav_upsell_text"
+    ]
+``` 
