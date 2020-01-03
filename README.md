@@ -207,4 +207,28 @@ console.log(getNavItemsLinks())
         "https://www.linkedin.com/notifications/", 
         "https://www.linkedin.com/premium/products/?destRed…%3Dtrue&upsellOrderOrigin=premium_nav_upsell_text"
     ]
+*/
 ``` 
+
+## StackOverFlow
+
+### Getting question texts from home's questions list page
+
+```javascript
+// - Get question text label on stackoverflow's home page 
+// - An example using pure jQuery
+function getQuestionTexts() {
+    let questionTexts = [] // new Array()
+
+    $(".question-hyperlink").each(function(index, questionHyperlink){
+        if(!$(questionHyperlink).hasClass("mb0"))
+            questionTexts.push($(questionHyperlink).text())
+    })
+
+    return questionTexts
+}
+
+console.log(JSON.stringify(getQuestionTexts(), null, 4)) // Pretty print
+// console.log(getQuestionTexts())
+
+```
