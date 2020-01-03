@@ -15,7 +15,11 @@ A repository containing full of code snippets to manipulate the DOM of popular w
 
 Let's have look at below examples. It will also help users/developers/newbies to learn JavaScript/jQuery. Examples are documented, easy and straightforward.
 
-> **`$`** &raquo; **`ƒ $(selector, [startNode]) { [Command Line API] }`**
+> **`$`** &raquo; **`ƒ $(selector, [startNode]) { [Command Line API] }`** &raquo; **`LinkedIn`**
+>
+> **`$`** &raquo; **`ƒ (a,b){return new n.fn.init(a,b)}`** &raquo; **`StackOverflow`**
+>
+> **`$`** &raquo **`ƒ $(selector, [startNode]) { [Command Line API] }`** &raquo; **`GitHub`**
 
 ## Linkedin 
 
@@ -230,11 +234,10 @@ function getQuestionTexts() {
 
 console.log(JSON.stringify(getQuestionTexts(), null, 4)) // Pretty print
 // console.log(getQuestionTexts())
-
 ```
+![Hacky Image Sof 01](./images/2020/jan/fos_01.png)
 
-### Hot network questions - getting question texts
-
+### Hot network questions - getting question texts (Available on right, web version)
 ```javascript
 function gethotNextworkQuestionTexts() {
     let hotNextworkQuestionTexts = [] // new Array()
@@ -256,3 +259,4 @@ function gethotNextworkQuestionTexts() {
 
 console.log(JSON.stringify(gethotNextworkQuestionTexts(), null, 4))
 ```
+![Hacky Image Sof 02](./images/2020/jan/fos_02.png)
