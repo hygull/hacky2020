@@ -207,11 +207,11 @@ joinGroup({keywords: "algorithms internet", join: true})     // Join:   ["Algori
 > **`Join Group - joinGroup({keywords: "algorithms internet", join: true})`**
 ![Hacky Image 11](./images/2020/jan/nidknil_12.png)
 
-> **`Unjoin Group - joinGroup({keywords: "algorithms internet", join: false})`**
+**`Unjoin Group - joinGroup({keywords: "algorithms internet", join: false})`**
 ![Hacky Image 11](./images/2020/jan/nidknil_13.png)
 
 > **`Join all groups (max 8 visible in page) - joinGroup({all: true, join: true})`**
-![Hacky Image 11](./images/2020/jan/nidknil_13.png)
+![Hacky Image 11](./images/2020/jan/nidknil_14.png)
 
 <hr>
 
