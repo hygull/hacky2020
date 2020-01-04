@@ -2,6 +2,12 @@
 
 A repository containing full of code snippets to manipulate the DOM of popular websites (secret) and perform time taking actions quickly in seconds. 
 
+## Currently targeted websites
+
+1. [LinkedIn](https://www.linkedin.com/)
+2. [GitHub](https://www.github.com/)
+3. [StackOverflow](https://www.stackoverflow.com/)
+
 ## Why did I create this project?
 
 + I love JavaScript/jQuery.
