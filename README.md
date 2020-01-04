@@ -116,6 +116,94 @@ for(let elem of elems) {
 
 ![Hacky Image 10](./images/2020/jan/nidknil_10.png)
 
+### Getting list of groups available in currently active `My Network` tab
+
+```javascript
+function getGroupNames() {
+    let groupNames = []
+
+    let cardGroups = $(".mn-cohorts-list").children
+    joinCards  = $(".discover-entity-list", cardGroups[5]).children
+
+    for(let joinCard of joinCards) {
+        let groupName = $('.discover-group-card__name', joinCard).innerText
+        groupNames.push(groupName)
+    } 
+
+    return groupNames  
+}
+
+console.log(JSON.stringify(getGroupNames(), null, 4))
+/*
+[
+    "Angular Developers - JavaScript Mastermind for Professional Development by AngularJobs.com",
+    "HR Jobs and Ideas - Human Resources, talent management, hiring tech, networking group",
+    "US IT Staffing Recruiters Group - Connecting Ideas !",
+    "Algorithms (O)",
+    "Internet of Things",
+    "Python Data Science and Machine Learning",
+    "MeExcel - MS Office Help Group",
+    "Linked:HR (#1 Human Resources Group)"
+]
+*/
+```
+![Hacky Image 11](./images/2020/jan/nidknil_11.png)
+
+
+```javascript
+function getRegex(keywords) {
+    let regex = new RegExp(keywords.split(/\s+/g).map((item) => item.trim()).join('|'), 'gi')
+    return regex
+}
+
+function joinGroup({
+        keywords='', 
+        join=true, 
+        all=false
+    } = {}) { // Space separated keywords
+
+    let joinedGroups = []
+
+    let cardGroups = $(".mn-cohorts-list").children
+    joinCards  = $(".discover-entity-list", cardGroups[5]).children
+
+    for(let joinCard of joinCards) {
+        let groupName = $('.discover-group-card__name', joinCard).innerText
+
+        if(join) {
+            className = 'group_join'
+        } else {
+            className = 'group_unjoin'
+        }
+
+        let button = $(`button[data-control-name="${className}"]`, joinCard)
+        if(!all) {
+            let regex = getRegex(keywords)
+            if(!groupName.match(regex)) {
+                continue
+            }
+        }
+
+        button.click() // Join Group
+        joinedGroups.push(groupName) // Record the name of joined group
+    }   
+
+    return joinedGroups
+}
+
+/*
+    If you want to join groups which have word `algorithms` or `internet`
+    Note: These words containing groups should appear in page
+*/
+joinGroup({keywords: "algorithms internet", join: true})  // Join:   ["Algorithms (O)", "Internet of Things"]
+// joinGroup({keywords: "algorithms internet", join: false}) // Unjoin: ["Algorithms (O)", "Internet of Things"]
+```
+> **`Join Group`**
+![Hacky Image 11](./images/2020/jan/nidknil_11.png)
+
+> **`Unjoin Group`**
+![Hacky Image 11](./images/2020/jan/nidknil_11.png)
+
 <hr>
 
 <h2 id="github">GitHub</h2>
@@ -221,39 +309,6 @@ console.log(getNavItemsLinks())
     ]
 */
 ``` 
-
-### Getting list of groups available in currently active `My Network` tab
-
-```javascript
-function getGroupNames() {
-    let groupNames = []
-
-    let cardGroups = $(".mn-cohorts-list").children
-    joinCards  = $(".discover-entity-list", cardGroups[5]).children
-
-    for(let joinCard of joinCards) {
-        let groupName = $('.discover-group-card__name', joinCard).innerText
-        groupNames.push(groupName)
-    } 
-
-    return groupNames  
-}
-
-console.log(JSON.stringify(getGroupNames(), null, 4))
-/*
-[
-    "Angular Developers - JavaScript Mastermind for Professional Development by AngularJobs.com",
-    "HR Jobs and Ideas - Human Resources, talent management, hiring tech, networking group",
-    "US IT Staffing Recruiters Group - Connecting Ideas !",
-    "Algorithms (O)",
-    "Internet of Things",
-    "Python Data Science and Machine Learning",
-    "MeExcel - MS Office Help Group",
-    "Linked:HR (#1 Human Resources Group)"
-]
-*/
-```
-![Hacky Image 11](./images/2020/jan/nidknil_11.png)
 
 <hr>
 <h2 id="stackoverflow">StackOverflow</h2>
