@@ -195,14 +195,14 @@ function joinGroup({
     If you want to join groups which have word `algorithms` or `internet`
     Note: These words containing groups should appear in page
 */
-joinGroup({keywords: "algorithms internet", join: true})  // Join:   ["Algorithms (O)", "Internet of Things"]
+joinGroup({keywords: "algorithms internet", join: true})     // Join:   ["Algorithms (O)", "Internet of Things"]
 // joinGroup({keywords: "algorithms internet", join: false}) // Unjoin: ["Algorithms (O)", "Internet of Things"]
 ```
 > **`Join Group`**
-![Hacky Image 11](./images/2020/jan/nidknil_11.png)
+![Hacky Image 11](./images/2020/jan/nidknil_12.png)
 
 > **`Unjoin Group`**
-![Hacky Image 11](./images/2020/jan/nidknil_11.png)
+![Hacky Image 11](./images/2020/jan/nidknil_13.png)
 
 <hr>
 
