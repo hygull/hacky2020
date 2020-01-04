@@ -1,4 +1,4 @@
-# hacky2020
+<h1 id='hygull-root-hacky2020'>hacky2020</h1>
 
 A repository containing full of code snippets to manipulate the DOM of popular websites (secret) and perform time taking actions quickly in seconds. 
 
@@ -19,7 +19,7 @@ Let's have look at below examples. It will also help users/developers/newbies to
 >
 > **`$`** &raquo; **`ƒ (a,b){return new n.fn.init(a,b)}`** &raquo; **`StackOverflow`**
 >
-> **`$`** &raquo **`ƒ $(selector, [startNode]) { [Command Line API] }`** &raquo; **`GitHub`**
+> **`$`** &raquo; **`ƒ $(selector, [startNode]) { [Command Line API] }`** &raquo; **`GitHub`**
 
 ### Gettings started (Directly jump to)
 
@@ -268,3 +268,36 @@ function gethotNextworkQuestionTexts() {
 console.log(JSON.stringify(gethotNextworkQuestionTexts(), null, 4))
 ```
 ![Hacky Image Sof 02](./images/2020/jan/fos_02.png)
+
+### Getting list of groups available in currently active `My Network` tab
+
+```javascript
+function getGroupNames() {
+    let groupNames = []
+
+    let cardGroups = $(".mn-cohorts-list").children
+    joinCards  = $(".discover-entity-list", cardGroups[5]).children
+
+    for(let joinCard of joinCards) {
+        let groupName = $('.discover-group-card__name', joinCard).innerText
+        groupNames.push(groupName)
+    } 
+
+    return groupNames  
+}
+
+console.log(JSON.stringify(getGroupNames(), null, 4))
+/*
+[
+    "Angular Developers - JavaScript Mastermind for Professional Development by AngularJobs.com",
+    "HR Jobs and Ideas - Human Resources, talent management, hiring tech, networking group",
+    "US IT Staffing Recruiters Group - Connecting Ideas !",
+    "Algorithms (O)",
+    "Internet of Things",
+    "Python Data Science and Machine Learning",
+    "MeExcel - MS Office Help Group",
+    "Linked:HR (#1 Human Resources Group)"
+]
+*/
+```
+ 
