@@ -184,8 +184,12 @@ function joinGroup({
             }
         }
 
-        button.click() // Join Group
-        joinedGroups.push(groupName) // Record the name of joined group
+        if(button) {
+            button.click() // Join Group
+            joinedGroups.push(groupName) // Record the name of joined group
+        } else {
+            console.log('Could fulfill request')
+        }
     }   
 
     return joinedGroups
@@ -195,13 +199,18 @@ function joinGroup({
     If you want to join groups which have word `algorithms` or `internet`
     Note: These words containing groups should appear in page
 */
+
 joinGroup({keywords: "algorithms internet", join: true})     // Join:   ["Algorithms (O)", "Internet of Things"]
 // joinGroup({keywords: "algorithms internet", join: false}) // Unjoin: ["Algorithms (O)", "Internet of Things"]
+// joinGroup({all: true, join: true}) // Join all groups (8 max visible in page)
 ```
-> **`Join Group`**
+> **`Join Group - joinGroup({keywords: "algorithms internet", join: true})`**
 ![Hacky Image 11](./images/2020/jan/nidknil_12.png)
 
-> **`Unjoin Group`**
+> **`Unjoin Group - joinGroup({keywords: "algorithms internet", join: false})`**
+![Hacky Image 11](./images/2020/jan/nidknil_13.png)
+
+> **`Join all groups (max 8 visible in page) - joinGroup({all: true, join: true})`**
 ![Hacky Image 11](./images/2020/jan/nidknil_13.png)
 
 <hr>

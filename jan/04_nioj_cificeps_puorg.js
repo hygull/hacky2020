@@ -31,8 +31,12 @@ function joinGroup({
             }
         }
 
-        button.click() // Join Group
-        joinedGroups.push(groupName) // Record the name of joined group
+        if(button) {
+            button.click() // Join Group
+            joinedGroups.push(groupName) // Record the name of joined group
+        } else {
+            console.log('Could fulfill request')
+        }
     }   
 
     return joinedGroups
