@@ -117,6 +117,7 @@ for(let elem of elems) {
 ![Hacky Image 10](./images/2020/jan/nidknil_10.png)
 
 ### Getting list of groups available in currently active `My Network` tab
+> Attempted on Wed, Jan 4, 2020
 
 ```javascript
 function getGroupNames() {
@@ -323,7 +324,7 @@ console.log(getNavItemsLinks())
 <h2 id="stackoverflow">StackOverflow</h2>
 
 ### Getting question texts from home's questions list page
-
+> Attempted on Wed, Jan 3, 2020
 ```javascript
 // - Get question text label on stackoverflow's home page 
 // - An example using pure jQuery
@@ -344,6 +345,7 @@ console.log(JSON.stringify(getQuestionTexts(), null, 4)) // Pretty print
 ![Hacky Image Sof 01](./images/2020/jan/fos_01.png)
 
 ### Hot network questions - getting question texts (Available on right, web version)
+> Attempted on Wed, Jan 3, 2020
 ```javascript
 function getHotNextworkQuestionTexts() {
     let hotNextworkQuestionTexts = [] // new Array()
