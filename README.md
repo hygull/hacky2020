@@ -25,7 +25,7 @@ Let's have look at below examples. It will also help users/developers/newbies to
 
 1. [LinkedIn Hacky Works](#linkedin)
 1. [GitHub Hacky Works](#github)
-1. [StackOverlow Hacky Works](#stackoverflow)
+1. [StackOverflow Hacky Works](#stackoverflow)
 
 <hr>
 
@@ -221,8 +221,42 @@ console.log(getNavItemsLinks())
     ]
 */
 ``` 
+
+### Getting list of groups available in currently active `My Network` tab
+
+```javascript
+function getGroupNames() {
+    let groupNames = []
+
+    let cardGroups = $(".mn-cohorts-list").children
+    joinCards  = $(".discover-entity-list", cardGroups[5]).children
+
+    for(let joinCard of joinCards) {
+        let groupName = $('.discover-group-card__name', joinCard).innerText
+        groupNames.push(groupName)
+    } 
+
+    return groupNames  
+}
+
+console.log(JSON.stringify(getGroupNames(), null, 4))
+/*
+[
+    "Angular Developers - JavaScript Mastermind for Professional Development by AngularJobs.com",
+    "HR Jobs and Ideas - Human Resources, talent management, hiring tech, networking group",
+    "US IT Staffing Recruiters Group - Connecting Ideas !",
+    "Algorithms (O)",
+    "Internet of Things",
+    "Python Data Science and Machine Learning",
+    "MeExcel - MS Office Help Group",
+    "Linked:HR (#1 Human Resources Group)"
+]
+*/
+```
+![Hacky Image 11](./images/2020/jan/nidknil_11.png)
+
 <hr>
-<h2 id="stackoverflow">StackOverFlow</h2>
+<h2 id="stackoverflow">StackOverflow</h2>
 
 ### Getting question texts from home's questions list page
 
@@ -268,36 +302,3 @@ function gethotNextworkQuestionTexts() {
 console.log(JSON.stringify(gethotNextworkQuestionTexts(), null, 4))
 ```
 ![Hacky Image Sof 02](./images/2020/jan/fos_02.png)
-
-### Getting list of groups available in currently active `My Network` tab
-
-```javascript
-function getGroupNames() {
-    let groupNames = []
-
-    let cardGroups = $(".mn-cohorts-list").children
-    joinCards  = $(".discover-entity-list", cardGroups[5]).children
-
-    for(let joinCard of joinCards) {
-        let groupName = $('.discover-group-card__name', joinCard).innerText
-        groupNames.push(groupName)
-    } 
-
-    return groupNames  
-}
-
-console.log(JSON.stringify(getGroupNames(), null, 4))
-/*
-[
-    "Angular Developers - JavaScript Mastermind for Professional Development by AngularJobs.com",
-    "HR Jobs and Ideas - Human Resources, talent management, hiring tech, networking group",
-    "US IT Staffing Recruiters Group - Connecting Ideas !",
-    "Algorithms (O)",
-    "Internet of Things",
-    "Python Data Science and Machine Learning",
-    "MeExcel - MS Office Help Group",
-    "Linked:HR (#1 Human Resources Group)"
-]
-*/
-```
- 
