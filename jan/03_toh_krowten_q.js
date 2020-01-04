@@ -1,4 +1,4 @@
-function gethotNextworkQuestionTexts() {
+function getHotNextworkQuestionTexts() {
     let hotNextworkQuestionTexts = [] // new Array()
 
     $(".question-hyperlink").each(function(index, questionHyperlink){
@@ -16,7 +16,7 @@ function gethotNextworkQuestionTexts() {
     return hotNextworkQuestionTexts.map((questionText) => questionText.trim())
 }
 
-console.log(JSON.stringify(gethotNextworkQuestionTexts(), null, 4))
+console.log(JSON.stringify(getHotNextworkQuestionTexts(), null, 4))
 
 /*
 [

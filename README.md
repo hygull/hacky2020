@@ -207,7 +207,7 @@ joinGroup({keywords: "algorithms internet", join: true})     // Join:   ["Algori
 > **`Join Group - joinGroup({keywords: "algorithms internet", join: true})`**
 ![Hacky Image 11](./images/2020/jan/nidknil_12.png)
 
-**`Unjoin Group - joinGroup({keywords: "algorithms internet", join: false})`**
+> **`Unjoin Group - joinGroup({keywords: "algorithms internet", join: false})`**
 ![Hacky Image 11](./images/2020/jan/nidknil_13.png)
 
 > **`Join all groups (max 8 visible in page) - joinGroup({all: true, join: true})`**
@@ -345,7 +345,7 @@ console.log(JSON.stringify(getQuestionTexts(), null, 4)) // Pretty print
 
 ### Hot network questions - getting question texts (Available on right, web version)
 ```javascript
-function gethotNextworkQuestionTexts() {
+function getHotNextworkQuestionTexts() {
     let hotNextworkQuestionTexts = [] // new Array()
 
     $(".question-hyperlink").each(function(index, questionHyperlink){
@@ -363,6 +363,6 @@ function gethotNextworkQuestionTexts() {
     return hotNextworkQuestionTexts.map((questionText) => questionText.trim())
 }
 
-console.log(JSON.stringify(gethotNextworkQuestionTexts(), null, 4))
+console.log(JSON.stringify(getHotNextworkQuestionTexts(), null, 4))
 ```
 ![Hacky Image Sof 02](./images/2020/jan/fos_02.png)
