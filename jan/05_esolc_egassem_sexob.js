@@ -2,7 +2,7 @@ function closeMessageBoxes({all=false} = {}) {
     var messageBox = $("button[data-control-name='overlay.close_conversation_window']")
     if(all) 
         while(true) {
-            if(messageBox) { // If opened (Only 1 message box is allowed to open)
+            if(messageBox) { // If opened 
                 messageBox.click()
             } else {
                 break
@@ -11,7 +11,7 @@ function closeMessageBoxes({all=false} = {}) {
             messageBox = $("button[data-control-name='overlay.close_conversation_window']")
         }
     else
-        if(messageBox)
+        if(messageBox) // If opened 
             messageBox.click()
 }
 
