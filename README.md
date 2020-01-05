@@ -224,7 +224,7 @@ joinGroup({keywords: "algorithms internet", join: true})     // Join:   ["Algori
 ![Hacky Image 11](./images/2020/jan/nidknil_14.png)
 
 
-### Getting nessage button texts available in Notifications tab
+### Getting message button texts available in Notifications tab
 > Attempted on Sun, 5 Jan, 2020
 ```javascript
 function getNotificationsButtonsText() {
@@ -249,6 +249,31 @@ console.log(buttonTexts) // ["Say congrats", "Say congrats", ...]
 ```
 > **`Getting message button texts available in Notifications tab`**
 ![Hacky Image 11](./images/2020/jan/nidknil_16.png)
+
+### Closing message box(es) opened (Clicked on Notifications tab)
+Attempted on Sun, 5 Jan, 2020
+
+```javascript
+function closeMessageBoxes({all=false} = {}) {
+    var messageBox = $("button[data-control-name='overlay.close_conversation_window']")
+    if(all) 
+        while(true) {
+            if(messageBox) { // If opened (Only 1 message box is allowed to open)
+                messageBox.click()
+            } else {
+                break
+            }
+
+            messageBox = $("button[data-control-name='overlay.close_conversation_window']")
+        }
+    else
+        if(messageBox)
+            messageBox.click()
+}
+
+closeMessageBoxes() // Only close the very first message box
+// closeMessageBoxes({all: true}) // Close all opened message boxes
+```
 
 <hr>
 
