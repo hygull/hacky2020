@@ -223,6 +223,33 @@ joinGroup({keywords: "algorithms internet", join: true})     // Join:   ["Algori
 > **`Join all groups (max 8 visible in page) - joinGroup({all: true, join: true})`**
 ![Hacky Image 11](./images/2020/jan/nidknil_14.png)
 
+
+### Getting nessage button texts available in Notifications tab
+> Attempted on Sun, 5 Jan, 2020
+```javascript
+function getNotificationsButtonsText() {
+    let buttonTexts = new Array() // Output array
+    ntCards = $(".nt-segment").children
+
+    for(let ntCard of ntCards) {
+        button = $("button.message-anywhere-button", ntCard)
+        span = $("span", ntCard)
+
+        if(button && span)
+            buttonTexts.push($("span", button).innerText)
+    }
+
+    return buttonTexts
+}
+
+
+var buttonTexts = getNotificationsButtonsText()
+console.log(buttonTexts) // ["Say congrats", "Say congrats", ...]
+
+```
+> **`Getting message button texts available in Notifications tab`**
+![Hacky Image 11](./images/2020/jan/nidknil_16.png)
+
 <hr>
 
 <h2 id="github">GitHub</h2>

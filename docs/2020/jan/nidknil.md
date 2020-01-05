@@ -37,3 +37,8 @@
 <hr>
 
 ![Hacky Image 10](../../../images/2020/jan/nidknil_10.png)
+
+<hr>
+
+> **`Joining groups related to Big Data & Data Mining (Keyword: data)`**
+![Hacky Image 10](../../../images/2020/jan/nidknil_15.png)
