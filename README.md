@@ -446,7 +446,7 @@ function searchStackOverflow(searchString) {
 searchStackOverflow("Django Rest Framework")
 ```
 
-### Getting list of tags in currently active tags page `/tags/`
+### Getting list of tags in currently active tags page `/tags/, /tags/, /tags?page=1&tab=popular etc.`
 > Attempted on Mon, Jan 6, 2020
 
 ```javascript
