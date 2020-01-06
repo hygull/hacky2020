@@ -250,7 +250,7 @@ console.log(buttonTexts) // ["Say congrats", "Say congrats", ...]
 > **`Getting message button texts available in Notifications tab`**
 ![Hacky Image 11](./images/2020/jan/nidknil_16.png)
 
-### Closing message box(es) opened (Clicked on Notifications tab)
+### Closing message box(es) opened (clicked on Notifications tab)
 >Attempted on Sun, 5 Jan, 2020
 
 ```javascript
@@ -429,3 +429,19 @@ function getHotNextworkQuestionTexts() {
 console.log(JSON.stringify(getHotNextworkQuestionTexts(), null, 4))
 ```
 ![Hacky Image Sof 02](./images/2020/jan/fos_02.png)
+
+### Search for questions on StackOverflow
+> Attempted on Mon, Jan 6, 2020
+
+```javascript
+function searchStackOverflow(searchString) {
+    // Enter search string in input field
+    $(".s-input__search").val(searchString)
+
+    // Hit ENTER to submit form
+    $("form#search").submit()
+}
+
+// Search Example, Search for questions related to `Django Rest Framework`
+searchStackOverflow("Django Rest Framework")
+```
