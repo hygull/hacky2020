@@ -446,7 +446,7 @@ function searchStackOverflow(searchString) {
 searchStackOverflow("Django Rest Framework")
 ```
 
-### Getting list of tags in currently active tags page `/tags/, /tags/, /tags?page=1&tab=popular etc.`
+### Getting list of tags in tags page `/tags/, /tags?page=1&tab=popular etc.`
 > Attempted on Mon, Jan 6, 2020
 
 ```javascript
@@ -465,4 +465,4 @@ function getAllTagsInCurrenltyActivePage() {
 var tags = getAllTagsInCurrenltyActivePage()
 console.log(JSON.stringify(tags, undefined, 4)) // Pretty printing array
 ```
-![Hacky Image Sof 03](./images/2020/jan/fos_03_up.png)
+![Hacky Image Sof 03](./images/2020/jan/fos_03.png)
