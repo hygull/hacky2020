@@ -451,8 +451,9 @@ searchStackOverflow("Django Rest Framework")
 
 ```javascript
 function getAllTagsInCurrenltyActivePage() {
-    // Function which returns a list/array of all available tags in currently
-    // active page, /tags/
+    // Function which returns a list/array of all available tags in currently active page
+    // i.e. /tags/, /tags?page=1&tab=popular, /tags?page=5&tab=popular etc.
+
     let tags = []
     $('#tags-browser a.post-tag').each((i, e) => {
         tags[i] = $(e).text()
@@ -464,3 +465,4 @@ function getAllTagsInCurrenltyActivePage() {
 var tags = getAllTagsInCurrenltyActivePage()
 console.log(JSON.stringify(tags, undefined, 4)) // Pretty printing array
 ```
+![Hacky Image Sof 03](./images/2020/jan/fos_03.png)
