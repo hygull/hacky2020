@@ -445,3 +445,22 @@ function searchStackOverflow(searchString) {
 // Search Example, Search for questions related to `Django Rest Framework`
 searchStackOverflow("Django Rest Framework")
 ```
+
+### Getting list of tags in currently active tags page `/tags/`
+> Attempted on Mon, Jan 6, 2020
+
+```javascript
+function getAllTagsInCurrenltyActivePage() {
+    // Function which returns a list/array of all available tags in currently
+    // active page, /tags/
+    let tags = []
+    $('#tags-browser a.post-tag').each((i, e) => {
+        tags[i] = $(e).text()
+    })
+
+    return tags
+}
+
+var tags = getAllTagsInCurrenltyActivePage()
+console.log(JSON.stringify(tags, undefined, 4)) // Pretty printing array
+```
