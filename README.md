@@ -465,4 +465,4 @@ function getAllTagsInCurrenltyActivePage() {
 var tags = getAllTagsInCurrenltyActivePage()
 console.log(JSON.stringify(tags, undefined, 4)) // Pretty printing array
 ```
-![Hacky Image Sof 03](./images/2020/jan/fos_03.png)
+![Hacky Image Sof 03](./images/2020/jan/fos_03_up.png)
