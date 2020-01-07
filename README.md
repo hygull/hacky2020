@@ -466,3 +466,46 @@ var tags = getAllTagsInCurrenltyActivePage()
 console.log(JSON.stringify(tags, undefined, 4)) // Pretty printing array
 ```
 ![Hacky Image Sof 03](./images/2020/jan/fos_03.png)
+
+
+### Activating nav items (programatically click)
+
+> Attempted on Tue, Jan 7, 2020
+
+```javascript
+function activateNavItem(name) {
+    let navItems = {
+        'achievements': '.achievements-button-item a',
+        'inbox': ".inbox-button-item a" ,
+        'review': '.review-button-item a',
+        'help': '.help-button-item a',
+        'site_switch': '.site-switcher-item a'
+        'profile': '.-item a img' 
+    }
+
+    if(navItems[name]) {
+        $(navItems[name]).click()
+    }
+}
+
+// Activate `Profile View` nav item
+activateNavItem('profile')
+
+// Activate `Inbox` nav item
+activateNavItem('inbox')
+
+// Activate `Achievements` nav item
+activateNavItem('achievements')
+
+// Activate `Review` nav item
+activateNavItem('review')
+
+// Activate `Help` nav item
+activateNavItem('help')
+
+// Activate `Site swicther` nav item
+activateNavItem('site_switch')
+```
+
+![Hacky Image Sof 03](./images/2020/jan/fos_04.png)
+
