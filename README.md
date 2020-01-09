@@ -27,6 +27,8 @@ Let's have look at below examples. It will also help users/developers/newbies to
 > **`$`** &raquo; **`ƒ (a,b){return new n.fn.init(a,b)}`** &raquo; **`StackOverflow`**
 >
 > **`$`** &raquo; **`ƒ $(selector, [startNode]) { [Command Line API] }`** &raquo; **`GitHub`**
+>
+> **`$`** &raquo; **`ƒ $(selector, [startNode]) { [Command Line API] }`** &raquo; **`Quora`**
 
 ### Gettings started (Directly jump to)
 
@@ -558,3 +560,5 @@ console.log(JSON.stringify(getLeftMenuItemsLabels(), undefined, 4))
 */
 ```
 ![Hacky Image Quora 01](./images/2020/jan/arouq_01.png)
+
+
