@@ -7,6 +7,7 @@ A repository containing full of code snippets to manipulate the DOM of popular w
 1. [LinkedIn](https://www.linkedin.com/)
 2. [GitHub](https://www.github.com/)
 3. [StackOverflow](https://www.stackoverflow.com/)
+4. [Quora](https://www.quora.com/)
 
 ## Why did I create this project?
 
@@ -30,8 +31,9 @@ Let's have look at below examples. It will also help users/developers/newbies to
 ### Gettings started (Directly jump to)
 
 1. [LinkedIn Hacky Works](#linkedin)
-1. [GitHub Hacky Works](#github)
-1. [StackOverflow Hacky Works](#stackoverflow)
+2. [GitHub Hacky Works](#github)
+3. [StackOverflow Hacky Works](#stackoverflow)
+4. [Quora Hacky Works](#quora)
 
 <hr>
 
@@ -509,3 +511,50 @@ activateNavItem('site_switch')
 
 ![Hacky Image Sof 03](./images/2020/jan/fos_04.png)
 
+
+<hr>
+<h2 id="quora">Quora</h2>
+
+### Getting labels of menu items on left
+
+> Attempted on Thu, Jan 9, 2020
+
+```javascript
+function getLeftMenuItemsLabels() {
+    // Getting all <li> elements
+    var itemSwitchers = $(".switcher").children
+    var menuItemsLabels = []
+
+    // Finding the related element and extrating label text
+    for(var itemSwitcher of itemSwitchers) {
+        var label = $("div[class='label']", itemSwitcher).innerText
+
+        // menuItemsLabels.push(label); /* OR */
+        menuItemsLabels.splice(menuItemsLabels.length, 0, label) // []
+    }
+
+    return menuItemsLabels
+}
+
+// Call (test)
+console.log(JSON.stringify(getLeftMenuItemsLabels(), undefined, 4))
+/*
+[
+    "Feed",
+    "Success and Happiness",
+    "A Poem A Day",
+    "Anything!",
+    "Programmer's World",
+    "Unemployed's Diary",
+    "SciPhy",
+    "Future Machines",
+    "Smartass Club",
+    "Daily Dose Of Vocabulary",
+    "How To Use The Brain",
+    "Hear Him!",
+    "The Voice of Indian Youth",
+    "Life and Understanding"
+]
+*/
+```
+![Hacky Image Quora 01](./images/2020/jan/arouq_01.png)
