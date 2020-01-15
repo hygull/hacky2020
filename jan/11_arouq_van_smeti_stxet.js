@@ -4,7 +4,7 @@ function getNavItemsTexts() {
 
     for(var span of spans) {
         var elem = $(".expanded", span) // May be `null` if span exists but not 
-                                        // the class in any of descendants
+                                        // the `expanded` class in any of its descendants
         if(elem) {
             navItemText = elem.innerText
             navItemTexts.push(navItemText)
