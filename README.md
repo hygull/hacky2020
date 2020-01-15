@@ -475,6 +475,9 @@ function activateButton() {
 
 ```javascript
 function sendMessageOnClick() {
+    // Need to check as it is not working right now, it works when you add any space
+    // at the end of currenlty filled message and then manucally trigger this using
+    // `sendMessageOnClick()`
     $(".msg-form__send-button").click()
 }
 ```
