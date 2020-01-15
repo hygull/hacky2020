@@ -388,7 +388,7 @@ console.log(getNavItemsLinks())
 ### Putting message in box with dynamically picked recipient name and activating click event
 > Attempted on Wed, Jan 15, 2020
 >
-> **Note:** Jus attach a space in end of the message and click on **SEND** (Later, I need to check and fix this). 
+> **Note:** Just add a space at end of the message and click on **SEND** (Later, I need to check and fix this). 
 
 ```javascript
 function getHTMLmessage(message) {
@@ -405,7 +405,9 @@ function getHTMLmessage(message) {
     out += '<br>'
     return out
 }
+```
 
+```javascript
 function getNotInterestedInOpportunityMessage(first_name, full_name, occupation) {
     let message = "Dear " + first_name + ',\n\n';
     message += "Thank you very much and I appreciate your work but I am sorry to say that currently I am not available for the job opportunity.\n\n"
@@ -418,7 +420,9 @@ function getNotInterestedInOpportunityMessage(first_name, full_name, occupation)
     message = getHTMLmessage(message)
     return message
 }
+```
 
+```javascript
 function putMessage({
         message, 
         full_name='Rishikesh Agrawani', 
@@ -447,7 +451,9 @@ function putMessage({
 
     return true // Success
 }
+```
 
+```javascript
 function removePlaceholder() {
     /* Make the message properly visible (remove placeholder) and update the classes */
     newClasses = classesArr.join(' ')
@@ -455,7 +461,9 @@ function removePlaceholder() {
 
     return true // Success
 }
+```
 
+```javascript
 function activateButton() {
     // Activate button
     $("[value=send]").click() // $("[value=enterSend]").click()
@@ -463,11 +471,15 @@ function activateButton() {
 
     return true // Success
 }
+```
 
+```javascript
 function sendMessageOnClick() {
     $(".msg-form__send-button").click()
 }
+```
 
+```javascript
 function sendMessageUsingMessageBox(message) {
     putMessage(message) 
     // putMessage({full_name: "Rishikesh Agrawani", "occupation": "Python Developer"})
