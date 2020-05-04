@@ -1,0 +1,7 @@
+def f(root):
+    for i in glob(root + '/*'):
+        path = root + '/' + i
+        if os.path.isdir(path):
+            f(path)
+        else:
+            print(path)

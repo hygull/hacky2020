@@ -8,6 +8,7 @@ A repository containing full of code snippets to manipulate the DOM of popular w
 2. [GitHub](https://www.github.com/)
 3. [StackOverflow](https://www.stackoverflow.com/)
 4. [Quora](https://www.quora.com/)
+5. [Google](https://google.com/)
 
 ## Why did I create this project?
 
@@ -456,8 +457,8 @@ function putMessage({
 ```javascript
 function removePlaceholder() {
     /* Make the message properly visible (remove placeholder) and update the classes */
-    newClasses = classesArr.join(' ')
-    $(".msg-form__placeholder").setAttribute("class", newClasses)
+    newClasses = classesArr.join(' ');
+    $(".msg-form__placeholder").setAttribute("class", newClasses);
 
     return true // Success
 }
@@ -466,8 +467,8 @@ function removePlaceholder() {
 ```javascript
 function activateButton() {
     // Activate button
-    $("[value=send]").click() // $("[value=enterSend]").click()
-    $(".msg-form__send-button").removeAttribute("disabled")
+    $("[value=send]").click(); // $("[value=enterSend]").click()
+    $(".msg-form__send-button").removeAttribute("disabled");
 
     return true // Success
 }
@@ -476,9 +477,9 @@ function activateButton() {
 ```javascript
 function sendMessageOnClick() {
     // Need to check as it is not working right now, it works when you add any space
-    // at the end of currenlty filled message and then manucally trigger this using
-    // `sendMessageOnClick()`
-    $(".msg-form__send-button").click()
+    // at the end of currenlty filled message and then manually trigger this using
+    // `sendMessageOnClick()` statement
+    $(".msg-form__send-button").click();
 }
 ```
 
@@ -699,5 +700,20 @@ console.log(getNavItemsTexts())
 ```
 ![Hacky Image Quora 02](./images/2020/jan/arouq_02.png)
 
+<hr>
+<h2 id="google">Google</h2>
+
+#### Search on Google
+
+> Attempted on Wed, Apr 08, 2020
+
+```javascript
+function googleSearch(text) {
+    $('input[type="text"]').value = text;
+    $('button[type="submit"]').click()
+}
+
+googleSearch('Top programming languages')
+```
 
 
